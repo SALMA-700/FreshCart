@@ -28,7 +28,6 @@ export default function WishListIcon({id , isWishList}:{id:string , isWishList:b
           router.refresh()
           setIswishListt(true)
         const response =await addProductToWishlist(id)
-        console.log(response);
         if (response.status=="success") {
           toast.success(response.message,{position:"bottom-right", autoClose:2000 , closeOnClick:true})
         }

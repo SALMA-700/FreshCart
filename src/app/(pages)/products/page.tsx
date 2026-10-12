@@ -17,7 +17,6 @@ export default async function Products() {
   const { data } = await getallProducts();
 
   const wishlist = await getLoggedUserWishlist()
-      console.log(wishlist);
       const wishListids = wishlist.data.map((wishlist:WishListing)=>wishlist.id)
   return (
     <>

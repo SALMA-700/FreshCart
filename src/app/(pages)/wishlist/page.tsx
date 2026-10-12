@@ -7,7 +7,6 @@ import Link from "next/link";
 
 export default async function Wishlist() {
     const response = await getLoggedUserWishlist()
-    console.log(response);
     
   
   return (
