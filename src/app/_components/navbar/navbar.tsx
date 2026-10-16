@@ -37,7 +37,7 @@ export default function Navbar({cartIcon , wishIcon}:{cartIcon : React.ReactNode
     signOut({ callbackUrl: "/login" });
   };
 
-  const { data: session, status } = useSession();
+  const { data: session } = useSession();
 
   return (
     <>
@@ -278,7 +278,7 @@ export default function Navbar({cartIcon , wishIcon}:{cartIcon : React.ReactNode
                           />
                         }
                       >
-                        Women's Fashion
+                        Women&apos;s Fashion
                       </DropdownMenuItem>
 
                       <DropdownMenuItem
@@ -289,7 +289,7 @@ export default function Navbar({cartIcon , wishIcon}:{cartIcon : React.ReactNode
                           />
                         }
                       >
-                        Men's Fashion
+                        Men&apos;s Fashion
                       </DropdownMenuItem>
 
                       <DropdownMenuItem

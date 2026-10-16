@@ -27,7 +27,7 @@ export default function Login() {
       email: "",
       password: "",
     },
-    resolver: zodResolver(loginSchema),
+    resolver:zodResolver(loginSchema),
     mode: "all",
   });
 

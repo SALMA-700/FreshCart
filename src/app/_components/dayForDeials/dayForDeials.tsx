@@ -1,14 +1,12 @@
 import { ArrowRight, Sparkles } from 'lucide-react'
-import React from 'react'
 import { FaFire } from 'react-icons/fa'
-
 export default function DayForDeials() {
   return (
     <>
     <section className="w-full px-2 py-20 sm:px-3 lg:px-4">
       <div className="mx-auto grid max-w-[1800px] grid-cols-1 gap-4 lg:grid-cols-2">
 
-        <div className="relative overflow-hidden rounded-[24px] bg-gradient-to-br from-[#08b77c] via-[#00a875] to-[#00875f] px-4 py-7 text-white  sm:px-5 lg:px-12">
+        <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-[#08b77c] via-[#00a875] to-[#00875f] px-4 py-7 text-white  sm:px-5 lg:px-12">
 
           {/* Top Right Circle */}
           <div className="absolute -right-12 -top-24 h-56 w-56 rounded-full bg-white/10" />
@@ -63,7 +61,7 @@ export default function DayForDeials() {
 
 
         {/* New Arrivals */}
-        <div className="relative  overflow-hidden rounded-[24px] bg-gradient-to-br from-[#ff8414] via-[#ff5c45] to-[#ff2458] px-7 py-7 text-white  sm:px-10  lg:px-12">
+        <div className="relative  overflow-hidden rounded-3xl bg-linear-to-br from-[#ff8414] via-[#ff5c45] to-[#ff2458] px-7 py-7 text-white  sm:px-10  lg:px-12">
 
           {/* Top Right Circle */}
           <div className="absolute -right-12 -top-24 h-56 w-56 rounded-full bg-white/10" />

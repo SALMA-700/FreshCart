@@ -1,3 +1,5 @@
+"use server"
+
 export const getProductDetail = async (id: string) => {
   const response = await fetch(
     `https://ecommerce.routemisr.com/api/v1/products/${id}`,

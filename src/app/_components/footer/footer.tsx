@@ -1,11 +1,12 @@
 import {
-  Truck,RotateCcw,ShieldCheck,Headphones,ShoppingCart,Phone,Mail,MapPin,CreditCard,} from "lucide-react";
+  Truck,RotateCcw,Headphones,Phone,Mail,MapPin} from "lucide-react";
+import Image from "next/image";
 import { FaCcMastercard, FaCcPaypal, FaCcVisa, FaFacebookF, FaInstagram, FaShieldAlt, FaTwitter, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="w-full">
-      <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-b border-green-100">
+      <div className="bg-linear-to-r from-green-50 to-emerald-50 border-b border-green-100">
         <div className="max-w-7xl mx-auto px-6 py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center shrink-0">
@@ -56,9 +57,8 @@ export default function Footer() {
             {/* Brand column */}
             <div>
               <div className="inline-flex items-center gap-2 bg-white rounded-lg px-4 py-2.5">
-                {/* <ShoppingCart className="w-6 h-6 text-green-600" strokeWidth={2.5} />
-                <span className="text-slate-900 font-bold text-xl">FreshCart</span> */}
-                 <img
+                
+                 <Image width={500} height={500}
               src="/freshcart-logo.49f1b44d.svg"
               className="h-auto w-40"
               alt="FreshCart"
@@ -114,8 +114,8 @@ export default function Footer() {
                 <li><a href="#" className="text-slate-400 text-sm hover:text-green-500 transition-colors">Categories</a></li>
                 <li><a href="#" className="text-slate-400 text-sm hover:text-green-500 transition-colors">Brands</a></li>
                 <li><a href="#" className="text-slate-400 text-sm hover:text-green-500 transition-colors">Electronics</a></li>
-                <li><a href="#" className="text-slate-400 text-sm hover:text-green-500 transition-colors">Men's Fashion</a></li>
-                <li><a href="#" className="text-slate-400 text-sm hover:text-green-500 transition-colors">Women's Fashion</a></li>
+                <li><a href="#" className="text-slate-400 text-sm hover:text-green-500 transition-colors">Men&apos;s Fashion</a></li>
+                <li><a href="#" className="text-slate-400 text-sm hover:text-green-500 transition-colors">Women&apos;s Fashion</a></li>
               </ul>
             </div>
 

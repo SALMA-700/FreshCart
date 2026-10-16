@@ -8,11 +8,10 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "react-toastify";
 import Link from "next/link";
 import { checkOutSchema, checkOutSchemaType } from "@/app/schema/checkOut.schema";
-import { checkoutsession, createCashOrder } from "@/CheckOutAction/checkOutsession";
+import { checkoutsession } from "@/CheckOutAction/checkOutsession";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { CartType } from "@/Types/cart.types";
-// type LoginValues = z.infer<typeof checkOutSchema>;
 
 export default function CheckOut({ cartResponse }: { cartResponse: CartType }) {
   const router = useRouter();
@@ -84,14 +83,15 @@ export default function CheckOut({ cartResponse }: { cartResponse: CartType }) {
           throw new Error(response.message || "Could not start checkout.");
         }
         window.location.assign(checkoutUrl);
-      } else {
-        const response = await createCashOrder(cartResponse.cartId, values);
-        if (response.status !== "success") {
-          throw new Error(response.message || "Could not place your order.");
-        }
-        toast.success(response.message || "Order placed successfully.");
+      } 
+      // else {
+      //   const response = await checkoutsession(cartResponse.cartId, values);
+      //   if (response.status !== "success") {
+      //     throw new Error(response.message || "Could not place your order.");
+      //   }
+        // toast.success(response.message || "Order placed successfully.");
         router.push("/allorders");
-      }
+      // }
     } catch (error) {
       toast.error(
         error instanceof Error ? error.message : "Could not start checkout.",

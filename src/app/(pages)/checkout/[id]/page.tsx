@@ -8,5 +8,4 @@ export default async function CheckOutPage() {
   return <CheckOut cartResponse={cartResponse} />;
 
 
-// allorders
 }

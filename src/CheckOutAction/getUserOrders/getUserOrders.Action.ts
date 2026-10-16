@@ -36,8 +36,7 @@ export async function getUserOrders(id: string): Promise<UserOrder[]> {
   const response = await fetch(
     `https://ecommerce.routemisr.com/api/v1/orders/user/${encodeURIComponent(id)}`,
     {
-      headers: { token },
-      cache: "no-store",
+      headers: { token }
     },
   );
   const payload: unknown = await response.json();

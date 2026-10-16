@@ -72,7 +72,7 @@ function OrderCard({ order }: OrderCardProps) {
     >
       <div className="p-5 sm:p-7">
         <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
-          <div className="relative flex h-[120px] w-[120px] shrink-0 items-center justify-center self-start rounded-[18px] border border-gray-100 bg-gray-50 p-4 sm:h-[135px] sm:w-[135px]">
+          <div className="relative flex h-30 w-30 shrink-0 items-center justify-center self-start rounded-[18px] border border-gray-100 bg-gray-50 p-4 sm:h-33.75 sm:w-33.75">
             {firstProductData?.imageCover ? (
               <Image
                 src={firstProductData.imageCover}
@@ -124,7 +124,7 @@ function OrderCard({ order }: OrderCardProps) {
 
               <span className="flex items-center gap-2">
                 <MapPin size={16} className="shrink-0 text-slate-400" />
-                <span className="max-w-[220px] truncate">
+                <span className="max-w-55 truncate">
                   {order.shippingAddress?.city || "No address"}
                 </span>
               </span>
@@ -179,7 +179,7 @@ function OrderCard({ order }: OrderCardProps) {
                   key={item._id ?? `${order._id}-${index}`}
                   className="flex items-center gap-4 rounded-[15px] border border-gray-100 bg-white p-4"
                 >
-                  <div className="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-xl bg-gray-50 p-2">
+                  <div className="flex h-18 w-18 shrink-0 items-center justify-center rounded-xl bg-gray-50 p-2">
                     {product?.imageCover ? (
                       <Image
                         src={product.imageCover}
@@ -286,7 +286,7 @@ export default function MyOrders({ orders }: { orders: UserOrder[] }) {
 
       <header className="mb-9 flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
         <div className="flex items-center gap-4">
-          <div className="flex h-[66px] w-[66px] shrink-0 items-center justify-center rounded-[20px] bg-linear-to-br from-green-500 to-green-700 text-white shadow-lg shadow-green-600/20">
+          <div className="flex h-16.5 w-16.5 shrink-0 items-center justify-center rounded-[20px] bg-linear-to-br from-green-500 to-green-700 text-white shadow-lg shadow-green-600/20">
             <ShoppingBag size={29} fill="currentColor" />
           </div>
           <div>
